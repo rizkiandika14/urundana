@@ -170,19 +170,37 @@ h6 {
   text-transform: uppercase;
 }
 
-.header .btn-getstarted,
-.header .btn-getstarted:focus {
+.header .btn-register,
+.header .btn-register:focus {
   color: var(--contrast-color);
   background: var(--accent-color);
   font-size: 14px;
   padding: 8px 25px;
-  margin: 0 0 0 30px;
-  border-radius: 50px;
+  margin: 0 0 0 5px;
+  border-radius: 2px;
   transition: 0.3s;
 }
 
-.header .btn-getstarted:hover,
-.header .btn-getstarted:focus:hover {
+.header .btn-login,
+.header .btn-login:focus {
+  color: var(--contrast-color);
+  background: transparent;
+  font-size: 14px;
+  padding: 8px 25px;
+  margin: 0 0 0 30px;
+  border-radius: 2px;
+  border: 1px solid var(--accent-color);
+  transition: 0.3s;
+}
+
+.header .btn-register:hover,
+.header .btn-register:focus:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+}
+
+.header .btn-login:hover,
+.header .btn-login:focus:hover {
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
@@ -192,7 +210,13 @@ h6 {
     order: 1;
   }
 
-  .header .btn-getstarted {
+  .header .btn-register {
+    order: 2;
+    margin: 0 15px 0 0;
+    padding: 6px 15px;
+  }
+
+  .header .btn-login {
     order: 2;
     margin: 0 15px 0 0;
     padding: 6px 15px;

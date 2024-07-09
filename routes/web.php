@@ -25,3 +25,6 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
+Route::get('/syarat-ketentuan', function () {
+    return view('syarat-ketentuan');
+})->name('syarat-ketentuan');

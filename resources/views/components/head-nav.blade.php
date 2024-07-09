@@ -2,41 +2,29 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
         <a href="index.html" class="logo d-flex align-items-center me-auto">
-            <h1 class="sitename">Arsha</h1>
+            <h5 class="sitename">PT SECURITIES CROWD FUNDING INDONESIA</h5>
         </a>
         <nav id="navmenu" class="navmenu">
             <ul>
                 <li><a wire:navigate href="/home" class="{{ Route::is('home') ? 'active' : '' }}">Home</a></li>
-                <li><a wire:navigate href="/about" class="{{ Route::is('about') ? 'active' : '' }}">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li class="dropdown"><a href="#"><span>Dropdown</span> <i
-                            class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <li class="dropdown"><a href="#"
+                        class="{{ Route::is('about') || Route::is('syarat-ketentuan') ? 'active' : '' }}"><span>Tentang</span>
+                        <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
-                        <li><a href="#">Dropdown 1</a></li>
-                        <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                                    class="bi bi-chevron-down toggle-dropdown"></i></a>
-                            <ul>
-                                <li><a href="#">Deep Dropdown 1</a></li>
-                                <li><a href="#">Deep Dropdown 2</a></li>
-                                <li><a href="#">Deep Dropdown 3</a></li>
-                                <li><a href="#">Deep Dropdown 4</a></li>
-                                <li><a href="#">Deep Dropdown 5</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Dropdown 2</a></li>
-                        <li><a href="#">Dropdown 3</a></li>
-                        <li><a href="#">Dropdown 4</a></li>
+                        <li><a wire:navigate href="/about">Tentang Kami</a></li>
+                        <li><a wire:navigate href="/syarat-ketentuan">Syarat & Ketentuan</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Risiko</a></li>
                     </ul>
                 </li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a wire:navigate href="/contact" class="{{ Route::is('contact') ? 'active' : '' }}">Hubungi Kami</a>
+                </li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="btn-getstarted" href="#about">Get Started</a>
+        <a class="btn-login" href="#about">Login</a>
+        <a class="btn-register" href="#about">Register</a>
 
 
     </div>
